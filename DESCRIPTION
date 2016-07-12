@@ -1,0 +1,24 @@
+Package: rdeps
+Title: Automatically Obtain Source Code for all Dependencies of a given R Package
+Version: 0.0.0
+Date: 2016-07-12
+Authors@R: person("Mark", "Padgham", email = "mark.padgham@email.com", role = c("aut", "cre"))
+Description: Automatically obtain source code for all dependencies of a given R
+    package, either by opening github sites in browser, or downloading .tar.gz
+    files.
+Depends:
+    R (>= 3.2.3)
+Imports:
+    XML
+Suggests:
+    knitr,
+    roxygen2,
+    rmarkdown,
+    devtools,
+    testthat
+License: MIT
+URL: https://github.com/mpadge/rdeps
+BugReports: https://github.com/mpadge/rdeps/issues
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1

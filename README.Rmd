@@ -1,0 +1,39 @@
+
+Automatically obtain source code for all dependencies of a given R package,
+either by opening github sites in browser, or downloading .tar.gz files.
+
+## Installation
+
+```{r, eval=FALSE}
+devtools::install_github ('mpadge/rdeps')
+```
+```{r, echo=FALSE, message=FALSE}
+setwd ('..')
+devtools::load_all ('rdeps', export_all=FALSE)
+devtools::document ('rdeps')
+#devtools::check ('rdeps')
+setwd ('./rdeps')
+#devtools::build_vignettes ()
+#testthat::test_package ('rdeps')
+```
+
+---------------
+
+## Usage
+
+```{r}
+get_rdeps ('httr')
+```
+
+The URLs of all dependencies which give them can be automatically opened with
+
+```{r, eval=FALSE}
+get_rdeps ('httr', fmt='url')
+```
+
+or the `.tar.gz` files of all dependencies can be automatically downloaded with
+
+```{r, eval=FALSE}
+get_rdeps ('httr', fmt='tar')
+```
+
