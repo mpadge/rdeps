@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mpadge/rdeps.svg?branch=master)](https://travis-ci.org/mpadge/rdeps)
+
 Automatically obtain source code for all dependencies of a given R package, either by opening github sites in browser, or downloading .tar.gz files.
 
 Installation

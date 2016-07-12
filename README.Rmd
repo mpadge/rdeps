@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/mpadge/rdeps.svg?branch=master)](https://travis-ci.org/mpadge/rdeps)
 
 Automatically obtain source code for all dependencies of a given R package,
 either by opening github sites in browser, or downloading .tar.gz files.
@@ -10,7 +11,7 @@ devtools::install_github ('mpadge/rdeps')
 ```{r, echo=FALSE, message=FALSE}
 setwd ('..')
 devtools::load_all ('rdeps', export_all=FALSE)
-devtools::document ('rdeps')
+#devtools::document ('rdeps')
 #devtools::check ('rdeps')
 setwd ('./rdeps')
 #devtools::build_vignettes ()
