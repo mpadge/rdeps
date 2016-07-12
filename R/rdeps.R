@@ -10,6 +10,6 @@
 #'
 #' @name rdeps
 #' @docType package
-#' @import httr sp XML
 #' @importFrom XML readHTMLTable
+#' @importFrom utils available.packages browseURL download.file
 NULL

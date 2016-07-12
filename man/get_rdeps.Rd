@@ -22,6 +22,6 @@ Character vector listing all dependencies
 }
 \description{
 Automatically obtain source code for all dependencies of a given R package,
-either by opening github sites in browser, or downloading .tar.gz files.
+either by opening associated web sites in browser, or downloading .tar.gz files.
 }
 

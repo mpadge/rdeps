@@ -16,7 +16,7 @@ Suggests:
     rmarkdown,
     devtools,
     testthat
-License: MIT
+License: GPL-3
 URL: https://github.com/mpadge/rdeps
 BugReports: https://github.com/mpadge/rdeps/issues
 LazyData: true
