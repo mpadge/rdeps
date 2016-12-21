@@ -5,7 +5,7 @@
 #'
 #' @section Functions:
 #' \tabular{ll}{
-#' \code{rdeps}\tab Obtain source code
+#' \code{get_rdeps}\tab Obtain source code
 #' }
 #'
 #' @name rdeps

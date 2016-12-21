@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/mpadge/rdeps.svg?branch=master)](https://travis-ci.org/mpadge/rdeps)
+[![Build status](https://ci.appveyor.com/api/projects/status/github/mpadge/rdeps?svg=true)](https://ci.appveyor.com/project/mpadge/rdeps)
+[![Project Status: WIP](http://www.repostatus.org/badges/0.1.0/wip.svg)](http://www.repostatus.org/#wip)
 
 Automatically obtain source code for all dependencies of a given R package,
 either by opening github sites in browser, or downloading .tar.gz files.
@@ -9,13 +11,11 @@ either by opening github sites in browser, or downloading .tar.gz files.
 devtools::install_github ('mpadge/rdeps')
 ```
 ```{r, echo=FALSE, message=FALSE}
-setwd ('..')
-devtools::load_all ('rdeps', export_all=FALSE)
-#devtools::document ('rdeps')
-#devtools::check ('rdeps')
-setwd ('./rdeps')
+devtools::load_all ('.', export_all=FALSE)
+#devtools::document ('.')
+#devtools::check ('.')
 #devtools::build_vignettes ()
-#testthat::test_package ('rdeps')
+#testthat::test_package ('.')
 ```
 
 ---------------
@@ -26,7 +26,8 @@ setwd ('./rdeps')
 get_rdeps ('httr')
 ```
 
-The URLs of all dependencies which give them can be automatically opened with
+For those dependencies which have associated URLs, these can be automatically
+opened with
 
 ```{r, eval=FALSE}
 get_rdeps ('httr', fmt='url')

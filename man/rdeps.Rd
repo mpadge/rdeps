@@ -12,7 +12,7 @@ either by opening github sites in browser, or downloading .tar.gz files.
 \section{Functions}{
 
 \tabular{ll}{
-\code{rdeps}\tab Obtain source code
+\code{get_rdeps}\tab Obtain source code
 }
 }
 
