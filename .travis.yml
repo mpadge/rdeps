@@ -2,7 +2,8 @@ language: R
 warnings_are_errors: true
 sudo: false
 cache: packages
-cran: https://cran.r-project.org
+repos:
+    CRAN: https://cloud.r-project.org
 
 matrix:
     include:
