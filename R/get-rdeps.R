@@ -19,9 +19,9 @@ get_rdeps <- function (pkg, fmt)
 {
     # list of packages which use httr:
     pkgs <- available.packages ()
-    dpds <- pkgs [,which (colnames (pkgs) == 'Depends')]
-    indx <- grep (pkg, dpds)
-    pkgs <- names (dpds) [indx]
+    imports <- pkgs [,which (colnames (pkgs) == 'Imports')]
+    indx <- grep (pkg, imports)
+    pkgs <- names (imports) [indx]
 
     if (!missing (fmt))
     {
