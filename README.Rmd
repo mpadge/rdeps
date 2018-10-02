@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/mpadge/rdeps.svg?branch=master)](https://travis-ci.org/mpadge/rdeps)
 [![Build status](https://ci.appveyor.com/api/projects/status/github/mpadge/rdeps?svg=true)](https://ci.appveyor.com/project/mpadge/rdeps)
-[![Project Status: WIP](http://www.repostatus.org/badges/0.1.0/wip.svg)](http://www.repostatus.org/#wip)
+[![Project Status: Active](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![codecov](https://codecov.io/gh/mpadge/rdeps/branch/master/graph/badge.svg)](https://codecov.io/gh/mpadge/rdeps)
 
 Automatically obtain source code for all packages which depend on a given R
 package, either by opening github sites in browser, or downloading .tar.gz
