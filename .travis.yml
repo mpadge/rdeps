@@ -2,20 +2,19 @@ language: R
 warnings_are_errors: true
 sudo: false
 cache: packages
-repos:
-    CRAN: https://cloud.r-project.org
 
 matrix:
     include:
         - r: release
           env: DEPS=cran
-          os: linux
+          dist: trusty # 14.04
+          env: R_CODECOV=true
         - r: release
           env: DEPS=cran
           os: osx
         - r: oldrel
           env: DEPS=cran
-          os: linux
+          dist: trusty # 14.04
         - r: oldrel
           env: DEPS=cran
           os: osx

@@ -10,10 +10,10 @@ Depends:
 Imports:
     XML
 Suggests:
-    knitr,
-    roxygen2,
-    rmarkdown,
     devtools,
+    knitr,
+    rmarkdown,
+    roxygen2,
     testthat
 License: GPL-3
 URL: https://github.com/mpadge/rdeps
