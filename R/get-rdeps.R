@@ -11,17 +11,22 @@
 #' Dependencies without associated URLs will also be listed.
 #' \item \code{tar} to download \code{.tar.gz} files of all dependencies.
 #' }
+#' @param suggests If \code{TRUE}, extract packages which \emph{suggest} the
+#' nominated package, rather than the default behaviour of \emph{imports}.
 #'
 #' @return Character vector listing all dependencies
 #'
 #' @export
-get_rdeps <- function (pkg, fmt)
+get_rdeps <- function (pkg, fmt, suggests = FALSE)
 {
+    field <- "Imports"
+    if (suggests)
+        field <- "Suggests"
     # list of packages which use httr:
     pkgs <- available.packages ()
-    imports <- pkgs [,which (colnames (pkgs) == 'Imports')]
-    indx <- grep (pkg, imports)
-    pkgs <- names (imports) [indx]
+    the_field <- pkgs [,which (colnames (pkgs) == field)]
+    indx <- grep (pkg, the_field)
+    pkgs <- names (the_field) [indx]
 
     if (!missing (fmt))
     {

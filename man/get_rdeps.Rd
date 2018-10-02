@@ -4,7 +4,7 @@
 \alias{get_rdeps}
 \title{get_rdeps}
 \usage{
-get_rdeps(pkg, fmt)
+get_rdeps(pkg, fmt, suggests = FALSE)
 }
 \arguments{
 \item{pkg}{Name of package for which dependencies are to be obtained}
@@ -16,6 +16,9 @@ Otherwise one of:
 Dependencies without associated URLs will also be listed.
 \item \code{tar} to download \code{.tar.gz} files of all dependencies.
 }}
+
+\item{suggests}{If \code{TRUE}, extract packages which \emph{suggest} the
+nominated package, rather than the default behaviour of \emph{imports}.}
 }
 \value{
 Character vector listing all dependencies
@@ -24,4 +27,3 @@ Character vector listing all dependencies
 Automatically obtain source code for all dependencies of a given R package,
 either by opening associated web sites in browser, or downloading .tar.gz files.
 }
-
